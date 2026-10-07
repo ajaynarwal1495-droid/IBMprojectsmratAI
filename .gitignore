@@ -1,0 +1,95 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# .gitignore — SmartStudy AI
+# ─────────────────────────────────────────────────────────────────────────────
+
+# ── Python ────────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python test and coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+
+# Type checkers
+.mypy_cache/
+.pytype/
+
+# SQLite database files (local development only)
+*.db
+*.sqlite
+*.sqlite3
+
+# ── Node.js / Frontend ────────────────────────────────────────────────────────
+node_modules/
+frontend/dist/
+frontend/build/
+.npm
+.yarn-integrity
+.pnp.*
+.yarn/
+
+# Vite
+frontend/.vite/
+
+# ── Environment & Secrets ─────────────────────────────────────────────────────
+# NEVER commit .env files — they may contain IBM API keys and credentials.
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# ── Docker ────────────────────────────────────────────────────────────────────
+# Local Docker build artefacts — not needed in source control
+docker-compose.override.yml
+
+# ── IDE / Editor ──────────────────────────────────────────────────────────────
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ── Logs ──────────────────────────────────────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+# ── Uploaded files (local dev storage) ───────────────────────────────────────
+backend/uploads/
+
+# ── Docs build artefacts ──────────────────────────────────────────────────────
+docs/_build/
+docs/site/
